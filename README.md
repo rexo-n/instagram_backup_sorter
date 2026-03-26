@@ -24,18 +24,13 @@ Advanced Instagram export parser with chat merging, media deduplication, and an 
 ![Step 2](images/step_2_menu.png)
 
 ### 3. Select input folder
-![Step 3](images/step_3_select_input.png)
+![Step 3](images/step_3_select_folder.png)
 
 ### 4. Select output folder
-![Step 4](images/step_4_select_output.png)
+![Step 4](images/step_4_select_output_folder.png)
 
 ### 5. Start processing
-![Step 5](images/step_5_processing.png)
-
----
-
-## 🖥️ Viewer Preview
-![Viewer](images/viewer_preview.png)
+![Step 5](images/step_5_start_and_wait.png)
 
 ---
 
