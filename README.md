@@ -1,36 +1,64 @@
+> Built for handling messy Instagram exports at scale.
 # Instagram HTML Sorter
 
-A powerful Python tool to process and organize Instagram HTML exports.
+Advanced Instagram export parser with chat merging, media deduplication, and an interactive offline chat viewer.
 
-## Features
+---
 
-- Parses raw Instagram HTML exports or ZIP files
-- Merges multi-part chats
-- Deduplicates messages and media (SHA-256)
-- Organizes media by date and chat
-- Generates offline chat viewer (HTML)
-- Fully resumable processing
-- Cross-platform (Windows, Linux, macOS)
+## ✨ Features
 
-## Usage
+- 🔗 Multi-part chat reconstruction
+- 🧠 Message + media deduplication (SHA-256)
+- 📂 Organized output structure
+- 🖼️ Offline chat viewer (HTML)
+- ⚡ Fast & resumable processing
+
+---
+
+## 📸 How It Works
+
+### 1. Input your Instagram export
+![Step 1](images/step1.png)
+
+### 2. Run the script
+![Step 2](images/step2.png)
+
+### 3. Explore clean chats
+![Step 3](images/step3.png)
+
+---
+
+## 🖥️ Viewer Preview
+![Viewer](images/viewer_preview.png)
+
+---
+
+## ⚙️ Usage
 
 ```bash
-python instagram_html_sort.py --input /path/to/export --output /path/to/output
+python instagram_html_sort.py --input <path> --output <path>
 ```
 
-## Install Dependencies
+---
+
+## 📦 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Output
+---
 
-- `Chats/` → processed chats with viewer
-- `Media/` → organized media files
-- `manifest.json` → run summary
+## 📁 Output Structure
 
-## Notes
+```
+Chats/
+Media/
+manifest.json
+```
 
-- Works with large exports
-- Handles corrupted or partial data
+---
+
+## 📝 License
+
+Licensed under the MIT License.
