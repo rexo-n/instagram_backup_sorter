@@ -14,6 +14,14 @@ Built after dealing with the reality of large, messy Instagram exports.
 * **Offline chat viewer** — Generates a standalone HTML interface for browsing reconstructed conversations without an internet connection.
 * **Fast & resumable processing** — Designed to handle larger exports without unnecessarily repeating completed work.
 
+---
+
+##Performance & Data Handling
+* **True Media Deduplication:** Meta's export tool generates a differently named file every single time an image is sent. By using SHA-256 hashing, the engine ignores filenames and compares the actual data payload. This prevents gigabytes of duplicate media from bloating the final archive, all without modifying or deleting your original raw export.
+* **Hardware-Agnostic Speed:** Highly optimized for low-end hardware. It can parse and reconstruct 79 complete chat histories in under 2 minutes on a dual-core Intel Celeron. On modern CPUs, it tears through massive exports in seconds.
+* **Adaptable Parsing:** Meta frequently changes their HTML export structures. The parsing logic is deliberately modular, making it trivial to tweak and adapt to new export formats as they evolve.
+
+---
 ## How It Works
 
 ```text
